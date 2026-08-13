@@ -1,163 +1,341 @@
-<h1 align="center">
-    <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Hi+👋,+I'm+Shahzaib!;+Cybersecurity+Researcher!;+Passionate+Developer!;" />
-</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shahzaib · Cybersecurity Developer</title>
+    <!-- Font Awesome for icons (optional, but we use it for clean icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        /* ---------- RESET & BASE ---------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<h3 align="center">⚡ A passionate developer & Cybersecurity Researcher  ⚡</h3>
+        body {
+            background: linear-gradient(145deg, #0b0f1a 0%, #1a1f2e 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 1rem;
+        }
 
-<br/>
+        .profile-card {
+            max-width: 900px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 3rem;
+            padding: 2.5rem 2rem;
+            box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7), inset 0 1px 2px rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            transition: all 0.3s ease;
+        }
 
-<div align="center">
-    <img src="https://komarev.com/ghpvc/?username=Shahzaib-Rather&label=Profile%20Views&color=0e75b6&style=flat" alt="profile views" />
-    <a href="https://github.com/Shahzaib-Rather?tab=followers">
-        <img src="https://img.shields.io/github/followers/Shahzaib-Rather?label=Followers&style=social" alt="followers" />
-    </a>
-</div>
+        /* ---------- TYPOGRAPHY ---------- */
+        .glow-text {
+            background: linear-gradient(135deg, #a8ff78, #78ffd6, #4facfe);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 800;
+        }
 
-<br/>
+        .typing-wrapper {
+            display: inline-block;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #e0e7ff;
+            letter-spacing: 1px;
+        }
 
-<div align="center">
-    <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
-</div>
+        .typing-wrapper .static {
+            color: #cbd5e1;
+        }
 
-<br/>
+        .typing-wrapper .dynamic {
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 3px solid #4facfe;
+            animation: blink-caret 0.75s step-end infinite, typewriter 3s steps(30) 1s forwards;
+            width: 0;
+            color: #fff;
+            font-weight: 700;
+        }
 
-<!-- About Me Section -->
-<h2 align="center">🌟 About Me 🌟</h2>
+        @keyframes typewriter {
+            from { width: 0; }
+            to { width: 100%; }
+        }
 
-<br/>
+        @keyframes blink-caret {
+            50% { border-color: transparent; }
+        }
 
-<div align="center">
-    <ul align="left" style="display: inline-block; text-align: left; font-size: 18px;">
-        <li>🔭 I'm currently working on <strong>Cybersecurity Tools & Automation</strong></li>
-        <li>🌱 I'm currently learning <strong>Advanced Penetration Testing & Malware Analysis</strong></li>
-        <li>👯 I'm looking to collaborate on <strong>Open Source Security Projects</strong></li>
-        <li>💬 Ask me about <strong>Python, Java, Linux, MySQL, or Cybersecurity</strong></li>
-        <li>⚡ Fun fact: <strong>I love solving CTF challenges in my free time!</strong></li>
-    </ul>
-</div>
+        /* small screens: reduce font size */
+        @media (max-width: 600px) {
+            .typing-wrapper {
+                font-size: 1.3rem;
+            }
+            .typing-wrapper .dynamic {
+                border-right-width: 2px;
+            }
+        }
 
-<br/>
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #e2e8f0;
+            margin-bottom: 1.2rem;
+            letter-spacing: -0.5px;
+            position: relative;
+        }
 
-<div align="center">
-    <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
-</div>
+        h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, #4facfe, #00f2fe);
+            border-radius: 4px;
+            margin-top: 8px;
+        }
 
-<br/>
+        /* ---------- ABOUT SECTION ---------- */
+        .about-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.8rem 1.5rem;
+            margin: 1.5rem 0 2rem 0;
+        }
 
-<!-- Languages and Tools Section -->
-<h2 align="center">🛠️ Languages & Tools 🛠️</h2>
+        .about-list li {
+            color: #cbd5e1;
+            font-size: 1.05rem;
+            padding: 0.4rem 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+        }
 
-<br/>
+        .about-list li i {
+            color: #4facfe;
+            width: 22px;
+            font-size: 1.1rem;
+        }
 
-<div align="center">
-    <a href="https://www.python.org" target="_blank" rel="noreferrer">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="50" height="50" />
-    </a>
-    &nbsp;&nbsp;
-    <a href="https://www.java.com" target="_blank" rel="noreferrer">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="50" height="50" />
-    </a>
-    &nbsp;&nbsp;
-    <a href="https://www.linux.org/" target="_blank" rel="noreferrer">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="50" height="50" />
-    </a>
-    &nbsp;&nbsp;
-    <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="50" height="50" />
-    </a>
-    &nbsp;&nbsp;
-    <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg" alt="bash" width="50" height="50" />
-    </a>
-    &nbsp;&nbsp;
-    <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="git" width="50" height="50" />
-    </a>
-    &nbsp;&nbsp;
-    <a href="https://www.docker.com/" target="_blank" rel="noreferrer">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" alt="docker" width="50" height="50" />
-    </a>
-    &nbsp;&nbsp;
-    <a href="https://www.jenkins.io" target="_blank" rel="noreferrer">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jenkins/jenkins-original.svg" alt="jenkins" width="50" height="50" />
-    </a>
-</div>
+        @media (max-width: 600px) {
+            .about-list {
+                grid-template-columns: 1fr;
+            }
+        }
 
-<br/>
+        /* ---------- TOOLS SECTION ---------- */
+        .tools-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem 2.5rem;
+            padding: 1.5rem 0 0.5rem 0;
+        }
 
-<div align="center">
-    <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
-</div>
+        .tool-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.2s ease;
+        }
 
-<br/>
+        .tool-item:hover {
+            transform: translateY(-6px);
+        }
 
-<!-- GitHub Stats Section -->
-<h2 align="center">📊 GitHub Stats 📊</h2>
+        .tool-item img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+            transition: filter 0.3s;
+        }
 
-<br/>
+        .tool-item:hover img {
+            filter: drop-shadow(0 6px 14px rgba(79, 172, 254, 0.5));
+        }
 
-<div align="center">
-    <img src="https://github-readme-stats.vercel.app/api?username=Shahzaib-Rather&show_icons=true&count_private=true&hide_border=true&title_color=00bfbf&icon_color=00bfbf&text_color=c9d1d9&bg_color=0d1117" alt="Shahzaib's GitHub Stats" width="48%" />
-    &nbsp;
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=Shahzaib-Rather&hide_border=true&stroke=00bfbf&ring=00bfbf&fire=00bfbf&currStreakLabel=00bfbf&background=0d1117" alt="Shahzaib's GitHub Streak" width="48%" />
-</div>
+        .tool-item span {
+            margin-top: 8px;
+            color: #94a3b8;
+            font-size: 0.9rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
 
-<br/>
+        /* ---------- STATS SECTION ---------- */
+        .stats-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 2rem 0 0.5rem 0;
+        }
 
-<div align="center">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shahzaib-Rather&layout=compact&hide_border=true&title_color=00bfbf&text_color=c9d1d9&bg_color=0d1117" alt="Top Languages" width="40%" />
-</div>
+        .stats-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            background: #0d1117;
+            padding: 4px;
+        }
 
-<br/>
+        .stats-container img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 12px 36px rgba(79, 172, 254, 0.2);
+        }
 
-<div align="center">
-    <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
-</div>
+        .stats-container .stats-card {
+            flex: 1 1 280px;
+            min-width: 240px;
+        }
 
-<br/>
+        .lang-card {
+            flex: 1 1 200px;
+            min-width: 200px;
+        }
 
-<!-- Connect With Me Section -->
-<h2 align="center">🤝 Connect With Me 🤝</h2>
+        /* ---------- DIVIDER ---------- */
+        .divider {
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #4facfe, #00f2fe, transparent);
+            margin: 2rem 0;
+            opacity: 0.3;
+        }
 
-<br/>
+        /* ---------- FOOTER ---------- */
+        .footer-text {
+            text-align: center;
+            color: #64748b;
+            font-size: 0.95rem;
+            margin-top: 1.8rem;
+            letter-spacing: 0.5px;
+            border-top: 1px solid rgba(255, 255, 255, 0.04);
+            padding-top: 1.8rem;
+        }
 
-<div align="center">
-    <a href="https://linkedin.com/in/shahzaib-rather" target="_blank">
-        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-    </a>
-    &nbsp;
-    <a href="https://twitter.com/shahzaib_rather" target="_blank">
-        <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" />
-    </a>
-    &nbsp;
-    <a href="https://instagram.com/shahzaib_rather" target="_blank">
-        <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
-    </a>
-    &nbsp;
-    <a href="mailto:shahzaib.rather@example.com" target="_blank">
-        <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
-    </a>
-    &nbsp;
-    <a href="https://github.com/Shahzaib-Rather" target="_blank">
-        <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-    </a>
-</div>
+        .footer-text i {
+            color: #f472b6;
+            margin: 0 4px;
+        }
 
-<br/>
+        /* ---------- RESPONSIVE ---------- */
+        @media (max-width: 480px) {
+            .profile-card {
+                padding: 1.5rem 1rem;
+                border-radius: 2rem;
+            }
+            .typing-wrapper {
+                font-size: 1rem;
+            }
+            .tools-grid {
+                gap: 1.2rem;
+            }
+            .tool-item img {
+                width: 48px;
+                height: 48px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
 
-<div align="center">
-    <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
-</div>
+        <!-- ===== HEADER with typing animation (pure CSS) ===== -->
+        <div style="text-align: center; margin-bottom: 0.5rem;">
+            <div class="typing-wrapper">
+                <span class="static">👋 Hi, I'm </span>
+                <span class="dynamic">Shahzaib</span>
+            </div>
+            <p style="color: #94a3b8; font-size: 1.1rem; margin-top: 10px; font-weight: 300;">
+                <i class="fas fa-shield-alt" style="color: #4facfe; margin-right: 6px;"></i>
+                Cybersecurity Researcher · Developer
+            </p>
+        </div>
 
-<br/>
+        <div class="divider"></div>
 
-<!-- Footer -->
-<h3 align="center">
-    <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=25&center=true&vCenter=true&width=500&height=50&duration=3000&lines=Thanks+for+visiting!;+Keep+learning+and+hacking!;+Stay+cyber+safe!+🔒;" />
-</h3>
+        <!-- ===== ABOUT ME ===== -->
+        <h2><i class="fas fa-user-astronaut" style="margin-right: 12px; color: #4facfe;"></i> About Me</h2>
+        <ul class="about-list">
+            <li><i class="fas fa-bolt"></i> Currently working on <strong>Cybersecurity Tools</strong></li>
+            <li><i class="fas fa-graduation-cap"></i> Learning <strong>Penetration Testing</strong></li>
+            <li><i class="fas fa-code-branch"></i> Open to collaborate on <strong>Security Projects</strong></li>
+            <li><i class="fas fa-comment-dots"></i> Ask me about <strong>Python, Java, Linux, MySQL</strong></li>
+            <li><i class="fas fa-trophy"></i> Fun fact: I love <strong>CTF challenges</strong></li>
+        </ul>
 
-<br/>
+        <div class="divider"></div>
 
-<div align="center">
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" />
-</div>
+        <!-- ===== LANGUAGES & TOOLS (only the four you listed) ===== -->
+        <h2><i class="fas fa-tools" style="margin-right: 12px; color: #4facfe;"></i> Languages & Tools</h2>
+        <div class="tools-grid">
+            <!-- Java -->
+            <div class="tool-item">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java" />
+                <span>Java</span>
+            </div>
+            <!-- Linux -->
+            <div class="tool-item">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="Linux" />
+                <span>Linux</span>
+            </div>
+            <!-- MySQL -->
+            <div class="tool-item">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" />
+                <span>MySQL</span>
+            </div>
+            <!-- Python -->
+            <div class="tool-item">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" />
+                <span>Python</span>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- ===== GITHUB STATS (kept, no social badges) ===== -->
+        <h2><i class="fas fa-chart-line" style="margin-right: 12px; color: #4facfe;"></i> GitHub Stats</h2>
+        <div class="stats-container">
+            <div class="stats-card">
+                <img src="https://github-readme-stats.vercel.app/api?username=Shahzaib-Rather&show_icons=true&count_private=true&hide_border=true&title_color=4facfe&icon_color=00f2fe&text_color=c9d1d9&bg_color=0d1117" alt="GitHub Stats" />
+            </div>
+            <div class="stats-card">
+                <img src="https://github-readme-streak-stats.herokuapp.com/?user=Shahzaib-Rather&hide_border=true&stroke=4facfe&ring=4facfe&fire=00f2fe&currStreakLabel=4facfe&background=0d1117" alt="GitHub Streak" />
+            </div>
+        </div>
+        <div style="display: flex; justify-content: center; margin-top: 0.8rem;">
+            <div class="lang-card">
+                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shahzaib-Rather&layout=compact&hide_border=true&title_color=4facfe&text_color=c9d1d9&bg_color=0d1117" alt="Top Languages" style="width: 100%;" />
+            </div>
+        </div>
+
+        <!-- ===== FOOTER ===== -->
+        <div class="footer-text">
+            <i class="fas fa-code"></i> Keep learning, keep hacking · 
+            <i class="fas fa-lock" style="color: #4facfe;"></i> Stay cyber safe
+        </div>
+
+    </div>
+</body>
+</html>
