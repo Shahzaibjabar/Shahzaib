@@ -53,24 +53,4 @@
 
 <br/>
 
-## 📊 GitHub Stats
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Shahzaib-Rather&show_icons=true&count_private=true&hide_border=true&title_color=4facfe&icon_color=00f2fe&text_color=c9d1d9&bg_color=0d1117" alt="Stats" width="48%" />
-  &nbsp;
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Shahzaib-Rather&hide_border=true&stroke=4facfe&ring=4facfe&fire=00f2fe&currStreakLabel=4facfe&background=0d1117" alt="Streak" width="48%" />
-</div>
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shahzaib-Rather&layout=compact&hide_border=true&title_color=4facfe&text_color=c9d1d9&bg_color=0d1117" alt="Top Langs" width="40%" />
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
-</div>
-
-<br/>
-
 💻 Keep learning, keep hacking · 🔐 Stay cyber safe
